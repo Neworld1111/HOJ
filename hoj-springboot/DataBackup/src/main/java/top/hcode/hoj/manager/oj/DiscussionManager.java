@@ -192,7 +192,7 @@ public class DiscussionManager {
 
         commonValidator.validateContent(discussion.getTitle(), "讨论标题", 255);
         commonValidator.validateContent(discussion.getDescription(), "讨论描述", 255);
-        commonValidator.validateContent(discussion.getContent(), "讨论", 65535);
+        commonValidator.validateContent(discussion.getContent(), "讨论", 205535);
         commonValidator.validateNotEmpty(discussion.getCategoryId(), "讨论分类");
 
         // 获取当前登录的用户
@@ -267,7 +267,7 @@ public class DiscussionManager {
         commonValidator.validateNotEmpty(discussion.getId(), "讨论ID");
         commonValidator.validateContent(discussion.getTitle(), "讨论标题", 255);
         commonValidator.validateContent(discussion.getDescription(), "讨论描述", 255);
-        commonValidator.validateContent(discussion.getContent(), "讨论", 65535);
+        commonValidator.validateContent(discussion.getContent(), "讨论", 205535);
         commonValidator.validateNotEmpty(discussion.getCategoryId(), "讨论分类");
 
         QueryWrapper<Discussion> discussionQueryWrapper = new QueryWrapper<>();
