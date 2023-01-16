@@ -42,12 +42,12 @@ public class MarkDownFileManager {
         boolean isProblemAdmin = SecurityUtils.getSubject().hasRole("problem_admin");
         boolean isAdmin = SecurityUtils.getSubject().hasRole("admin");
 
-        if (!isRoot
-                && !isProblemAdmin
-                && !isAdmin
-                && !(gid != null && groupValidator.isGroupAdmin(userRolesVo.getUid(), gid))) {
-            throw new StatusForbiddenException("对不起，您无权限操作！");
-        }
+//         if (!isRoot
+//                 && !isProblemAdmin
+//                 && !isAdmin
+//                 && !(gid != null && groupValidator.isGroupAdmin(userRolesVo.getUid(), gid))) {
+//             throw new StatusForbiddenException("对不起，您无权限操作！");
+//         }
 
         if (image == null) {
             throw new StatusFailException("上传的图片不能为空！");
